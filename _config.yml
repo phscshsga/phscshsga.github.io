@@ -15,7 +15,7 @@ title: PHSC Spring Hill Student Government Association
 description: > # this means to ignore newlines until "baseurl:"
   Pasco-Hernando State College Spring Hill Campus Student Government Association.
 baseurl: "" # the subpath of your site, e.g. /blog/
-# url: "http://kaymic.com/phscsga.github.io" # the base hostname & protocol for your site
+url: "http://phscsga.tk" # the base hostname & protocol for your site
 
 email: phccspringhillsga@gmail.com
 facebook_username: PHCCSpringHillSGA
