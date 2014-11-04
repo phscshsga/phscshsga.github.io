@@ -1,11 +1,26 @@
+#PHSC Settings
+current_term: 2014-A
+
+prez: Caitlin Machado
+vprez: Carlton Brown
+secretary: Kevin McCarthy
+treasurer: Ryan Griffiths
+
+gdrive_agendas_folder: 0B7KxO3iyK7HgRFBYWmFKM21Fd2s
+gdrive_minutes_folder: 0B7KxO3iyK7HgNWlPcVZsMXRIQXc
+
 # Site settings
 title: PHSC Spring Hill Student Government Association
-email: phccspringhillsga@gmail.com
+
 description: > # this means to ignore newlines until "baseurl:"
-  Pasco-Hernando State College Spring Hill Student Government Association.
+  Pasco-Hernando State College Spring Hill Campus Student Government Association.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://kaymic.com/phscsga.github.io" # the base hostname & protocol for your site
-twitter_username: phscshsga
+# url: "http://kaymic.com/phscsga.github.io" # the base hostname & protocol for your site
+
+email: phccspringhillsga@gmail.com
+facebook_username: PHCCSpringHillSGA
+# twitter_username: phscshsga
+# github_username: phscshsga
 
 # Build settings
 markdown: kramdown
