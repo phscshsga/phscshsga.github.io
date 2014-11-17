@@ -9,46 +9,27 @@ permalink: /clubs/
 		<tr>
 			<th>Organization</th>
 			<th>Meetings</th>
+			<th>Links</th>
 		</tr>
 	</thead>
 
 	<tbody>
+
+		{% for org in site.data.orgs %}
 		<tr>
-			<td><a href="/exec-board">Student Government Association (SGA)</a></td>
-			<td>Mondays 1:00 p.m., E-101</td>
+			<td>
+				{{org.name}} {% if org.abbr %}({{org.abbr}}){% endif %}
+			</td>
+			<td>{{org.meeting.time}}{% if org.meeting.location %}, {{org.meeting.location}}{% endif %}</td>
+			<td>
+				{% if org.facebook %}
+				<a href="https://facebook.com/{{org.facebook}}" target="_blank" class="btn btn-xs btn-info">
+					<i class="fa fa-facebook-square"></i>
+				</a>
+				{% endif %}
+			</td>
 		</tr>
-		<tr>
-			<td>Campus Crusade for Christ (Cru)</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Disney Leadership Alliance</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Legal Eagles</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Men of Excellence (MOE)</td>
-			<td>Thursdays 2:30 p.m.</td>
-		</tr>
-		<tr>
-			<td>Phi Beta Lambda (PBL)</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Phi Theta Kappa (PTK)</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>Student Veterans</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>True Anime and Gaming (TAG)</td>
-			<td></td>
-		</tr>
+		{% endfor %}
 
 	</tbody>
 </table>
