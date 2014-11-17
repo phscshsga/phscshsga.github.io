@@ -4,7 +4,7 @@ title: Executive Board
 permalink: /exec-board/
 ---
 
-<table width="100%">
+<table class="table table-striped">
 	<thead>
 		<tr>
 			<th colspan="2" align="left">
@@ -13,22 +13,15 @@ permalink: /exec-board/
 		</tr>
 	</thead>
 	<tbody>
+
+		{% for member in site.data.eboard %}
+
 		<tr>
-			<td><h3><small>President:</small></h3></td>
-			<td><h3>{{site.prez}}</h3></td>
+			<td><h3><small>{{member.position}}:</small></h3></td>
+			<td><h3>{{member.name}}</h3></td>
 		</tr>
-		<tr>
-			<td><h3><small>Vice President:</small></h3></td>
-			<td><h3>{{site.vprez}}</h3></td>
-		</tr>
-		<tr>
-			<td><h3><small>Secretary:</small></h3></td>
-			<td><h3>{{site.secretary}}</h3></td>
-		</tr>
-		<tr>
-			<td><h3><small>Treasurer:</small></h3></td>
-			<td><h3>{{site.treasurer}}</h3></td>
-		</tr>
+
+		{% endfor %}
 		
 	</tbody>
 </table>

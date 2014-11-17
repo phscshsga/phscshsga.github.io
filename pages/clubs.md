@@ -4,7 +4,7 @@ title: Student Organizations
 permalink: /clubs/
 ---
 
-<table width="100%">
+<table class="table table-striped">
 	<thead>
 		<tr>
 			<th>Organization</th>
